@@ -1,0 +1,24 @@
+# Disable directory listing
+Options All -Indexes
+ErrorDocument 404 /404.php
+
+# Restrict access to specific files
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files koneksi.php>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Enable rewrite engine for backoffice
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine on
+    RewriteBase /ppob/backoffice/
+
+    # Rewrite rule to handle .php extensions
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+</IfModule>
