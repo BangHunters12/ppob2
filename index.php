@@ -135,7 +135,7 @@ if ($status == true) {
   </style>
 </head>
 <!-- Bottom Navbar -->
-<nav class="navbar navbar-dark navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+<nav class="navbar navbar-dark navbar-expand fixed-bottom d-none d-lg-none d-xl-none p-0">
   <ul class="navbar-nav nav-justified w-100">
     <li class="nav-item">
       <a href="index" class="nav-link text-center">
