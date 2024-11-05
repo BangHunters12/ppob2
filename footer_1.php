@@ -4,7 +4,7 @@ require 'top_menu.php';
 ?>
     
     <footer id="aboutus" class="bg-footer">
-      <div data-v-10b0ebbe="" class="product-tile__clip-path"></div>
+      <div data-v-10b0ebbe=":hover" class="product-tile__clip-path"></div>
       <div class="pt-5 pb-5" bis_skin_checked="1">
         <div class="container" bis_skin_checked="1">
           <div class="row" bis_skin_checked="1">

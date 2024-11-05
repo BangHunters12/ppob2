@@ -144,7 +144,7 @@ require 'top_menu.php';
                 <div class="card zoom mb-3" style="background: #fdd017!important; border-radius: 10px;">
                   <a href="<?php echo $urlweb; ?>/<?php echo strtolower($sj['jenis']); ?>/<?php echo $s3['slug']; ?>/" class="product_list">
                     <img src="<?php echo $urlweb; ?>/upload/<?php echo $s3['image']; ?>" class="img-fluid" style="border-radius: 10px; display: block;">
-                    <div data-v-10b0ebbe="" class="product-tile__clip-path bg-dark"></div>
+                    <div data-v-10b0ebbe=":hover" class="product-tile__clip-path bg-dark"></div>
                     <div class="card-title text-center mt-3" bis_skin_checked="1" style="color: #000;">
                       <div style="min-height: 40px;"><?php echo $s3['kategori']; ?></div>
                       <div style="min-height: 30px; font-size: 10px;"><?php echo $s3['subtitle']; ?></div>
