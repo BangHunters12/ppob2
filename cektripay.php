@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-include('config/koneksi.phpp');
+include('config/koneksi.php');
 
 $sql_5 = mysqli_query($conn,"SELECT * FROM `tb_tripayapi` WHERE id = 1") or die(mysqli_error());
 $s5 = mysqli_fetch_array($sql_5);
