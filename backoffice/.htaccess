@@ -17,7 +17,7 @@ ErrorDocument 404 /404.php
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
     RewriteEngine on
-    RewriteBase /ppob/backoffice/
+    RewriteBase /ppob2/backoffice/
 
     # Rewrite rule to handle .php extensions
     RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]

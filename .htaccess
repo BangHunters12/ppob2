@@ -17,7 +17,7 @@ ErrorDocument 404 /404notfound/
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
     RewriteEngine on
-    RewriteBase /ppob/
+    RewriteBase /ppob2/
 
     # Rewrite rules for different categories
     RewriteRule ^game/([a-zA-Z0-9_-]+)/?$ order.php?cat=$1 [L]
