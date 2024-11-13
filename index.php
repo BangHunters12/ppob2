@@ -57,7 +57,7 @@ if ($status == true) {
   <meta http-equiv="content-language" content="en-us" />
   <meta name="author" content="Arie Budi" />
   <meta name="contact" content="ariebudi.com" />
-  <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+  <meta name="copyright" content="Copyright (c) dendistore.com. All Rights Reserved." />
   <meta name="robots" content="index, nofollow">
 
   <link rel="shortcut icon" type="image/x-icon" href="<?php echo $urlweb; ?>/upload/favicon.png">

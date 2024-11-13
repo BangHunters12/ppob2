@@ -1,5 +1,6 @@
 <?php
-ob_start();
+include_once(__DIR__ . '/../login-proses.php');
+ob_end_clean();
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 include('config/koneksi.php');
@@ -39,7 +40,7 @@ if (mysqli_num_rows($q) > 0) {
 function insertToken($user_id = 0){
     $conn = $GLOBALS['conn'];
 	if(empty($user_id) && $user_id === 0){
-		return false;
+		return false;z
 	}
 
 	$token = generateToken();
@@ -54,16 +55,7 @@ function insertToken($user_id = 0){
 }
 
 function generateToken(){
-	$length = 10;
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-
-	$token = md5(microtime(true).$characters);
-	return $token;
+    return bin2hex(random_bytes(16)); // menghasilkan token unik sepanjang waktu
 }
 
 ?>
