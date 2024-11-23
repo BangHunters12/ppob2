@@ -19,9 +19,9 @@ function sendResponse($status, $message, $data = null) {
 
 // Mendapatkan input dari JSON request
 $input = file_get_contents('php://input');
-var_dump($input);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     $username = isset($input['username']) ? trim($input['username']) : '';
     $password = isset($input['password']) ? trim($input['password']) : '';
 
