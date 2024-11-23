@@ -40,7 +40,7 @@ if (mysqli_num_rows($q) > 0) {
 function insertToken($user_id = 0){
     $conn = $GLOBALS['conn'];
 	if(empty($user_id) && $user_id === 0){
-		return false;z
+		return false;
 	}
 
 	$token = generateToken();

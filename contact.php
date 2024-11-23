@@ -33,8 +33,8 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
   <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
   <meta http-equiv="content-language" content="en-us" />
   <meta name="author" content="Arie Budi" />
-  <meta name="contact" content="ariebudi.com" />
-  <meta name="copyright" content="Copyright (c) dendistore.com. All Rights Reserved." />
+  <meta name="contact" content="topupin.com" />
+  <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
   <meta name="robots" content="index, nofollow">
 
   <link rel="shortcut icon" type="image/x-icon" href="<?php echo $urlweb; ?>/upload/favicon.png">
@@ -98,7 +98,7 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
                                   <i class="fab fa-instagram mt-1" style="font-size: 32px;!important;"></i>
                               </div>
                           </a>
-                          <a href="https://wa.me/<?php echo $s1b['no_hp']; ?>" target="_blank">
+                          <a href="https://wa.me/6281259627158<?php echo $s1b['no_hp']; ?>" target="_blank">
                               <div class="text-center mb-2 mr-2" style="float: left; width: 40px; height: 40px; border-radius: 10px; line-height: 42px; background-color: #25D366;">
                                   <i class="fab fa-whatsapp mt-1" style="font-size: 32px;!important"></i>
                               </div>

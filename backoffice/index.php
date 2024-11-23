@@ -32,9 +32,9 @@ $urlwebs = $s0['urlweb'];
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -95,7 +95,8 @@ $urlwebs = $s0['urlweb'];
               </div>
               <!-- /Logo -->
               <h4 class="mb-1 pt-2"></h4>
-              <p class="mb-4">Please sign-in to your account and start the adventure</p>
+              <p class="mb-4">Silakan masuk ke akun Anda dan mulai mengoprasi</p>
+
               <?php
                 error_reporting(0);
                 if (!empty($_GET['error'])) {
@@ -105,7 +106,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Username and Password Required!</span>
+                        <span><strong>Warning!</strong> Username dan Password diperlukan!</span>
                       </div>
                     ';
                   }
@@ -115,7 +116,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Username Wrong!</span>
+                        <span><strong>Warning!</strong> Username Salah!</span>
                       </div>
                     ';
                   }
@@ -125,7 +126,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Password Wrong!</span>
+                        <span><strong>Warning!</strong> Password Salah!</span>
                       </div>
                     ';
                   }
@@ -135,7 +136,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Username and Password Not Match!</span>
+                        <span><strong>Warning!</strong> Username dan Password tidak cocok!</span>
                       </div>
                     ';
                   }
@@ -145,7 +146,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Another user has logged in with your User ID!</span>
+                        <span><strong>Warning!</strong> Pengguna lain telah masuk dengan ID Pengguna Anda!</span>
                       </div>
                     ';
                   }
@@ -155,7 +156,7 @@ $urlwebs = $s0['urlweb'];
                         <span class="alert-icon text-warning me-2">
                           <i class="ti ti-bell ti-xs"></i>
                         </span>
-                        <span><strong>Warning!</strong> Your Account Not Active, Please Activate your account!</span>
+                        <span><strong>Warning!</strong> Akun Anda Tidak Aktif, Silakan Aktifkan akun Anda!</span>
                       </div>
                     ';
                   }
@@ -169,7 +170,7 @@ $urlwebs = $s0['urlweb'];
                     class="form-control"
                     id="email"
                     name="user"
-                    placeholder="Enter your username"
+                    placeholder="Masukkan username kamu"
                     autofocus
                   />
                 </div>

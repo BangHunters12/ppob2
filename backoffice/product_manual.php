@@ -22,9 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->

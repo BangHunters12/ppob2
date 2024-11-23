@@ -22,9 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Cekmutasi API Saved!</span>
+                                <span><strong>Well Done!</strong> Cekmutasi API Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -153,8 +153,8 @@
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="1"<?php if($s2['status'] == 1) { echo 'selected = selected'; } ?>> Active</option>
-                            <option value="0"<?php if($s2['status'] == 0) { echo 'selected = selected'; } ?>> Not Active</option>
+                            <option value="1"<?php if($s2['status'] == 1) { echo 'selected = selected'; } ?>> Aktif</option>
+                            <option value="0"<?php if($s2['status'] == 0) { echo 'selected = selected'; } ?>> Tidak Aktif</option>
                           </select>
                         </div>
                         <button type="submit" name="submit" class="btn btn-primary">Publish</button>
@@ -167,7 +167,7 @@
                       <div class="card-title">
                         Daftar Bank Terkait
                         <div class="float-right" style="float: right;">
-                          <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#formemodal" data-bs-backdrop="static" data-bs-keyboard="false"><i class="fa fa-plus mr-1"></i> Add Bank</button>
+                          <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#formemodal" data-bs-backdrop="static" data-bs-keyboard="false"><i class="fa fa-plus mr-1"></i> Tambah Bank</button>
                         </div>
                       </div>
                       <hr>
@@ -176,7 +176,7 @@
                         <div class="modal-dialog">
                           <div class="modal-content animated bounceIn">
                             <div class="modal-header">
-                              <h5 class="modal-title">Form Add Bank Account</h5>
+                              <h5 class="modal-title">Form Tambah Rekening Bank</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -200,7 +200,7 @@
                                   <input type="text" name="pemilik" class="form-control" value="" required>
                                 </div>
                                 <div class="form-group">
-                                  <button type="submit" name="submit" class="btn btn-primary">Add</button>
+                                  <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
                                   <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
                                 </div>
                               </form>
@@ -213,9 +213,9 @@
                           <thead>
                             <tr class="bg-info">
                               <th class="text-center" style="vertical-align: middle;">No</th>
-                              <th class="text-center" style="vertical-align: middle;">Bank Account</th>
-                              <th class="text-center" style="vertical-align: middle;">Account Number</th>
-                              <th class="text-center" style="vertical-align: middle;">Account Name</th>
+                              <th class="text-center" style="vertical-align: middle;">Rekening Bank</th>
+                              <th class="text-center" style="vertical-align: middle;">Nomor Rekening</th>
+                              <th class="text-center" style="vertical-align: middle;">Nama Akun</th>
                               <th class="text-center" style="vertical-align: middle;">Action</th>
                             </tr>
                           </thead>

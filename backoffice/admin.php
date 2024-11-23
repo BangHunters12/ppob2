@@ -22,9 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -134,7 +134,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Markup Selling Saved!</span>
+                                <span><strong>Well Done!</strong> Penjualan Markup Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -144,7 +144,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Maks Ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -154,7 +154,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }

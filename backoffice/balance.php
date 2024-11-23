@@ -22,9 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -132,7 +132,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Top Up Success!</span>
+                                <span><strong>Well Done!</strong> Top Up Sukses!</span>
                               </div>
                             ';
                           }
@@ -172,10 +172,10 @@
                           <tr class="bg-info">
                             <th class="text-center" style="vertical-align: middle;">#</th>
                             <th class="text-center" style="vertical-align: middle;">Username</th>
-                            <th class="text-center" style="vertical-align: middle;">Full Name</th>
-                            <th class="text-center" style="vertical-align: middle;">Active</th>
+                            <th class="text-center" style="vertical-align: middle;">Nama Lengkap</th>
+                            <th class="text-center" style="vertical-align: middle;">Aktif</th>
                             <th class="text-center" style="vertical-align: middle;">Pending</th>
-                            <th class="text-center" style="vertical-align: middle;">Payout</th>
+                            <th class="text-center" style="vertical-align: middle;">pembayaran</th>
                           </tr>
                         </thead>
                         <tbody>

@@ -22,9 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Product /</span> Category
+                <span class="text-muted fw-light">Produk /</span> Kategori
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Category Saved!</span>
+                                <span><strong>Well Done!</strong> Kategori Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -153,7 +153,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -166,7 +166,7 @@
                       ?>
                       <form role="form" action="<?php echo $urlweb; ?>/function/add-category.php" method="post" enctype="multipart/form-data">
                         <div class="form-group mb-2">
-                          <label class="form-label">Upload Icon :</label>
+                          <label class="form-label">Unggah Icon :</label>
                           <input type="file" name="image" class="form-control">
                           <span>PNG, 100px x 100px</span><br>
                           <?php if(isset($_GET['catID'])) { ?>
@@ -174,7 +174,7 @@
                           <?php } ?>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Category :</label>
+                          <label class="form-label">Kategori :</label>
                           <input class="form-control" type="text" name="kategori" value="<?php if(isset($_GET['catID'])) { echo $s2['kategori']; } ?>" required>
                           <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['catID'])) { echo $s2['id']; } ?>">
                         </div>
@@ -183,7 +183,7 @@
                           <input class="form-control" type="text" name="subtitle" value="<?php if(isset($_GET['catID'])) { echo $s2['subtitle']; } ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Type :</label>
+                          <label class="form-label">Jenis :</label>
                           <select name="parent" class="form-control" required>
                             <option value=""> Pilih </option>
                             <option value="1"<?php if(isset($_GET['catID'])) { if($s2['parent'] == 1) { echo 'selected = selected'; }} ?>> Game</option>
@@ -194,18 +194,18 @@
                           </select>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Help Button :</label>
+                          <label class="form-label">Tombol Bantuan :</label>
                           <textarea class="form-control summernoteEditor" type="text" name="bantuan"><?php if(isset($_GET['catID'])) { echo $s2['bantuan']; } ?></textarea>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Description :</label>
+                          <label class="form-label">Deskripsi :</label>
                           <textarea class="form-control summernoteEditor" type="text" name="deskripsi"><?php if(isset($_GET['catID'])) { echo $s2['deskripsi']; } ?></textarea>
                         </div>
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Active</option>
-                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Not Active</option>
+                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Aktif</option>
+                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Tidak Aktif</option>
                           </select>
                         </div>
                         <button type="submit" name="submit" class="btn btn-primary">Publish</button>
@@ -223,7 +223,7 @@
                           <tr class="bg-info">
                             <th class="text-center">#</th>
                             <th class="text-center">Icon</th>
-                            <th class="text-center">Category</th>
+                            <th class="text-center">Kategori</th>
                             <th class="text-center">Status</th>
                             <th class="text-center">Action</th>
                           </tr>

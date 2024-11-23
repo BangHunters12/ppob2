@@ -22,14 +22,9 @@
     <meta name="resource-type" content="document" />
     <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
     <meta http-equiv="content-language" content="en-us" />
-    <meta name="author" content="Arie Budi" />
-<<<<<<< HEAD
-    <meta name="contact" content="dendistore.com" />
-    <meta name="copyright" content="Copyright (c) dendistore.com. All Rights Reserved." />
-=======
-    <meta name="contact" content="ariebudi.com" />
-    <meta name="copyright" content="Copyright (c) ariebudi.com. All Rights Reserved." />
->>>>>>> 999e76c4ac52d880ddf53a15214e712c04dc70a6
+    <meta name="author" content="topupin" />
+    <meta name="contact" content="topupin.com" />
+    <meta name="copyright" content="Copyright (c) topupin.com. All Rights Reserved." />
     <meta name="robots" content="index, nofollow">
 
     <!-- Favicon -->
@@ -181,33 +176,21 @@
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Game & Akun Premium</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-success btn-sm">Ambil Produk</a>
-<<<<<<< HEAD
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
-=======
                               <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
->>>>>>> 999e76c4ac52d880ddf53a15214e712c04dc70a6
                             </td>
                           </tr>
                           <tr>
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Pulsa & Emoney</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-success btn-sm">Ambil Produk</a>
-<<<<<<< HEAD
                               <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
-=======
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
->>>>>>> 999e76c4ac52d880ddf53a15214e712c04dc70a6
                             </td>
                           </tr>
                           <tr>
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Social Media</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-success btn-sm">Ambil Produk</a>
-<<<<<<< HEAD
                               <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
-=======
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
->>>>>>> 999e76c4ac52d880ddf53a15214e712c04dc70a6
                             </td>
                           </tr>
                           <?php

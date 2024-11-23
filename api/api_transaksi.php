@@ -16,12 +16,12 @@ function sendResponse($status, $message, $data = null) {
     ]);
 }
 
-$input = json_decode(file_get_contents('php://input'), true);
+// $_POST = json_decode(file_get_contents('php://input'), true);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $user_id = isset($input['user_id']) ? intval($input['user_id']) : 0;
-    $total = isset($input['total']) ? intval($input['total']) : 0;
-    $transaksi = isset($input['transaksi']) ? $conn->real_escape_string($input['transaksi']) : '';
+    $user_id = isset($_POST['user_id']) ? intval($_POST['user_id']) : 0;
+    $total = isset($_POST['total']) ? intval($_POST['total']) : 0;
+    $transaksi = isset($_POST['transaksi']) ? $conn->real_escape_string($_POST['transaksi']) : '';
 
     if ($user_id <= 0 || $total <= 0 || $transaksi === '') {
         sendResponse('error', 'Data transaksi tidak valid');
