@@ -9,7 +9,8 @@ if ($conn->connect_error) {
 }
 
 // Fungsi untuk merespons dalam format JSON
-function sendResponse($status, $message, $data = null) {
+function sendResponse($status, $message, $data = null)
+{
     echo json_encode([
         'status' => $status,
         'message' => $message,
@@ -55,4 +56,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     sendResponse('error', 'Metode request tidak didukung');
 }
-?>

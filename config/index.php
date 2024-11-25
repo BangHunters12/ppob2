@@ -1,3 +1,3 @@
 <?php
-header('location:http://localhost/ppob');
+header('location:http://localhost/ppob2');
 ?>
