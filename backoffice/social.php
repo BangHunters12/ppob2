@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Information /</span> Social Media
+                <span class="text-muted fw-light">Informasi /</span> Social Media
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Social Media Saved!</span>
+                                <span><strong>Well Done!</strong> Social Media Tersimpan!</span>
                               </div>
                             ';
                           }

@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">System /</span> <span class="text-muted fw-light">Manage API /</span> Whatsapp
+                <span class="text-muted fw-light">Pengaturan /</span> <span class="text-muted fw-light">Whatsapp API /</span> Whatsapp
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Whatsapp API Saved!</span>
+                                <span><strong>Well Done!</strong> Whatsapp API Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -149,11 +149,11 @@
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="1"<?php if($s2['status'] == 1) { echo 'selected = selected'; } ?>> Active</option>
-                            <option value="0"<?php if($s2['status'] == 0) { echo 'selected = selected'; } ?>> Not Active</option>
+                            <option value="1"<?php if($s2['status'] == 1) { echo 'selected = selected'; } ?>> Aktif</option>
+                            <option value="0"<?php if($s2['status'] == 0) { echo 'selected = selected'; } ?>> tidak Aktif</option>
                           </select>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/whatsapp/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>

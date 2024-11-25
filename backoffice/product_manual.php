@@ -111,7 +111,7 @@
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4">
-              <span class="text-muted fw-light">Product /</span> Produk Manual
+              <span class="text-muted fw-light">Produk /</span> Produk Manual
               <span class="float-right" style="float: right;">
                 <a href="<?php echo $urlweb; ?>/product_manual/?do=add" class="btn btn-primary" style="margin-top: -5px;"><i class="fa fa-plus"></i>&nbsp; Add Product</a>
               </span>

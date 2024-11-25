@@ -114,7 +114,7 @@
           <div class="content-wrapper">
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Product /</span> Produk Game</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Produk /</span> Produk Game</h4>
               <?php
                 error_reporting(0);
                 if(isset($_GET['do'])){

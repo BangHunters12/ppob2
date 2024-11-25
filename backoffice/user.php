@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Information /</span> User Account
+                <span class="text-muted fw-light">Informasi /</span> Akun Pengguna
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> User Account Saved!</span>
+                                <span><strong>Well Done!</strong> Akun Pengguna tersimpan!</span>
                               </div>
                             ';
                           }
@@ -143,7 +143,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Username or Email Address Registered!</span>
+                                <span><strong>Warning!</strong> Username Atau Alamat Email Terdaftar!</span>
                               </div>
                             ';
                           }
@@ -160,26 +160,26 @@
                           <input type="password" name="pass" class="form-control" value="" required>
                         </div>
                         <div class="form-group mb-2">
-                          <label>Full Name</label>
+                          <label>Nama Lengkap</label>
                           <input type="text" name="full_name" class="form-control" value="" required>
                         </div>
                         <div class="form-group mb-2">
-                          <label>Email Address</label>
+                          <label>Alamat Email</label>
                           <input type="text" name="email" class="form-control" value="" required>
                         </div>
                         <div class="form-group mb-2">
-                          <label>Phone / Mobile Number</label>
+                          <label>Nomor Telepon</label>
                           <input type="text" name="no_hp" class="form-control" value="" required>
                         </div>
                         <div class="form-group mb-2">
-                          <label>Level Access</label>
+                          <label>Tingkat Akses</label>
                           <select name="level" class="form-control" required>
-                            <option> Level Access </option>
+                            <option> Tingkat Akses </option>
                             <option value="superadmin"> Super Admin </option>
                             <option value="admin"> Admin </option>
                           </select>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/user/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>
@@ -194,10 +194,10 @@
                           <tr class="bg-info">
                             <th class="text-center" style="vertical-align: middle;">#</th>
                             <th class="text-center" style="vertical-align: middle;">Username</th>
-                            <th class="text-center" style="vertical-align: middle;">Full Name</th>
-                            <th class="text-center" style="vertical-align: middle;">Email Address</th>
-                            <th class="text-center" style="vertical-align: middle;">Phone Number</th>
-                            <th class="text-center" style="vertical-align: middle;">Action</th>
+                            <th class="text-center" style="vertical-align: middle;">Nama Lengkap</th>
+                            <th class="text-center" style="vertical-align: middle;">Alamat Email</th>
+                            <th class="text-center" style="vertical-align: middle;">Nomor Telepon</th>
+                            <th class="text-center" style="vertical-align: middle;">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -218,7 +218,7 @@
                                 if($s1['id'] != 1){
                               ?>
                               <a href="<?php echo $urlweb; ?>/function/user-status.php?postID=<?php echo $s1['id']; ?>&status=<?php echo $s1['status']; ?>&tipe=2" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a>
-                              <a href="<?php echo $urlweb; ?>/function/del-user.php?id=<?php echo $s1['id']; ?>&tipe=2" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">
+                              <a href="<?php echo $urlweb; ?>/function/del-user.php?id=<?php echo $s1['id']; ?>&tipe=2" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus data ini?');">
                                 <i class="fa fa-trash"></i>
                               </a>
                               <?php } ?>

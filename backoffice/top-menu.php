@@ -47,13 +47,13 @@
                     <li>
                       <a class="dropdown-item" href="<?php echo $urlweb; ?>/e_user/">
                         <i class="ti ti-user-check me-2 ti-sm"></i>
-                        <span class="align-middle">My Profile</span>
+                        <span class="align-middle">Profil saya</span>
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="<?php echo $urlweb; ?>/setting/"">
                         <i class="ti ti-settings me-2 ti-sm"></i>
-                        <span class="align-middle">Settings</span>
+                        <span class="align-middle">Pengaturan</span>
                       </a>
                     </li>
                     <li>
