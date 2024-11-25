@@ -151,8 +151,8 @@
                   <div class="card h-100">
                     <div class="card-header">
                       <div class="d-flex justify-content-between mb-3">
-                        <h5 class="card-title mb-0">Statistics</h5>
-                        <small class="text-muted">Updated Today</small>
+                        <h5 class="card-title mb-0">Statistik</h5>
+                        <small class="text-muted">"Diperbarui Hari Ini</small>
                       </div>
                     </div>
                     <div class="card-body">

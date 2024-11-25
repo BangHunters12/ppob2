@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">System /</span> <span class="text-muted fw-light">Settings /</span> Template
+                <span class="text-muted fw-light">Sistem /</span> <span class="text-muted fw-light">Pengaturan /</span> Template
 
               </h4>
               <div class="row">
@@ -134,7 +134,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Template Saved!</span>
+                                <span><strong>Well Done!</strong> Template Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -144,7 +144,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Max Image Ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -154,7 +154,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -375,7 +375,7 @@
                             </div>
                           </div>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/template/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>

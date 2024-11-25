@@ -114,7 +114,7 @@
           <div class="content-wrapper">
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Transaction /</span> Order List</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Transaksi /</span> Daftar Pesanan</h4>
               <div class="row">
                 <?php
                   error_reporting(0);
@@ -132,7 +132,7 @@
                   <div class="card h-100">
                     <div class="card-header">
                       <div class="d-flex justify-content-between mb-3">
-                        <h5 class="card-title mb-0">Statistics</h5>
+                        <h5 class="card-title mb-0">Statistik</h5>
                         <small class="text-muted"></small>
                       </div>
                     </div>
@@ -195,16 +195,16 @@
                     <thead>
                       <tr class="bg-info">
                         <th class="text-center" style="vertical-align: middle;">#</th>
-                        <th class="text-center" style="vertical-align: middle;">Date</th>
+                        <th class="text-center" style="vertical-align: middle;">Tanggal</th>
                         <th class="text-center" style="vertical-align: middle;">TrxID</th>
                         <th class="text-center" style="vertical-align: middle;">Customer</th>
                         <th class="text-center" style="vertical-align: middle;">Voucher</th>
                         <th class="text-center" style="vertical-align: middle;">Discount</th>
-                        <th class="text-center" style="vertical-align: middle;">Total Pay</th>
-                        <th class="text-center" style="vertical-align: middle;">Product</th>
+                        <th class="text-center" style="vertical-align: middle;">Total Pembayaran</th>
+                        <th class="text-center" style="vertical-align: middle;">Produk</th>
                         <th class="text-center" style="vertical-align: middle;">Status</th>
-                        <th class="text-center" style="vertical-align: middle;">Note</th>
-                        <th class="text-center" style="vertical-align: middle;">Action</th>
+                        <th class="text-center" style="vertical-align: middle;">Catatan</th>
+                        <th class="text-center" style="vertical-align: middle;">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -289,7 +289,7 @@
                               </div>
                             </div>
                           <?php }} ?>
-                          <a href="<?php echo $urlweb; ?>/function/del-order.php?id=<?php echo $s1['kd_transaksi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                          <a href="<?php echo $urlweb; ?>/function/del-order.php?id=<?php echo $s1['kd_transaksi']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin untuk menghapus data ini?');"><i class="fa fa-trash"></i></a>
                         </td>
                       </tr>
                       <?php } ?>

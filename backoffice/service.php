@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">System /</span> <span class="text-muted fw-light">Settings /</span> Services
+                <span class="text-muted fw-light">Sistem /</span> <span class="text-muted fw-light">Pengaturan /</span> Ambil Produk API
 
               </h4>
               <div class="row">
@@ -129,7 +129,7 @@
                           <span class="alert-icon text-success me-2">
                             <i class="ti ti-check ti-xs"></i>
                           </span>
-                          <span><strong>Well Done!</strong> Product Berhasil Diimport!</span>
+                          <span><strong>Well Done!</strong> Product Berhasil Tersimpan!</span>
                         </div>
                       ';
                     }
@@ -139,7 +139,7 @@
                           <span class="alert-icon text-success me-2">
                             <i class="ti ti-check ti-xs"></i>
                           </span>
-                          <span><strong>Well Done!</strong> Product Berhasil Dihapus!</span>
+                          <span><strong>Well Done!</strong> Product Berhasil Tersimpan!</span>
                         </div>
                       ';
                     }
@@ -167,7 +167,7 @@
                         <thead>
                           <tr class="bg-info">
                             <th class="text-center">Services</th>
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -176,7 +176,7 @@
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Game & Akun Premium</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-success btn-sm">Ambil Produk</a>
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
+                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');">Hapus Produk</a>
                             </td>
                           </tr>
                           <tr>
@@ -200,14 +200,14 @@
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Game & Voucher</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-success btn-sm">Ambil Produk</a>
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
+                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=1" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
                             </td>
                           </tr>
                           <tr>
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Pulsa & Emoney</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-success btn-sm">Ambil Produk</a>
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
+                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=2" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
                             </td>
                           </tr>
                           <?php
@@ -217,7 +217,7 @@
                             <td class="text-left" style="vertical-align: middle; white-space: normal;">Produk Social Media</td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal;">
                               <a href="<?php echo $urlweb; ?>/function/get-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-success btn-sm">Ambil Produk</a>
-                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">Hapus Produk</a>
+                              <a href="<?php echo $urlweb; ?>/function/del-service.php?postID=<?php echo $s1['id']; ?>&jenis=3" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus Produk</a>
                             </td>
                           </tr>
                           <?php } ?>

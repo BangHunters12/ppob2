@@ -116,7 +116,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Settings /</span> Voucher
+                <span class="text-muted fw-light">Pengaturan /</span> Voucher
 
               </h4>
               <div class="row">
@@ -132,7 +132,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Voucher Created!</span>
+                                <span><strong>Well Done!</strong> Voucher Dibuat!</span>
                               </div>
                             ';
                           }
@@ -145,23 +145,23 @@
                       ?>
                       <form role="form" action="<?php echo $urlweb; ?>/function/add-reward.php" method="post">
                         <div class="form-group mb-2">
-                          <label>Voucher Code :</label>
+                          <label>Kode Vocher :</label>
                           <input class="form-control" type="text" name="title" value="<?php if(isset($_GET['catID'])) { echo $s2['title']; } ?>" required>
                           <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['catID'])) { echo $s2['id']; } ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Discount Amount</label>
+                          <label class="form-label">Jumlah Diskon</label>
                           <input type="number" name="nominal" value="<?php if(isset($_GET['catID'])) { echo $s2['nominal']; } ?>" class="form-control" required>
                         </div>
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Active</option>
-                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Not Active</option>
+                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Aktif</option>
+                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Tidak Aktif</option>
                           </select>
                         </div>
                         <div class="form-group mt-3">
-                          <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                          <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                           <a href="<?php echo $urlweb; ?>/voucher/" class="btn btn-secondary">Batal</a>
                         </div>
                       </form>
@@ -176,10 +176,10 @@
                         <thead>
                           <tr class="bg-info">
                             <th class="text-center" style="vertical-align: middle;">#</th>
-                            <th class="text-center" style="vertical-align: middle;">Voucher Code</th>
-                            <th class="text-center" style="vertical-align: middle;">Discount</th>
+                            <th class="text-center" style="vertical-align: middle;">Kode Vocher</th>
+                            <th class="text-center" style="vertical-align: middle;">Diskon</th>
                             <th class="text-center" style="vertical-align: middle;">Status</th>
-                            <th class="text-center" style="vertical-align: middle;">Action</th>
+                            <th class="text-center" style="vertical-align: middle;">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -197,7 +197,7 @@
                             <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php if($s1['status'] == 0){ echo 'Not Active'; } else { echo 'Active'; } ?></td>
                             <td class="text-center" style="vertical-align: middle; font-size: 14px;">
                               <a href="<?php echo $urlweb; ?>/voucher/?catID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i></a>
-                              <a href="<?php echo $urlweb; ?>/function/del-reward.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                              <a href="<?php echo $urlweb; ?>/function/del-reward.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus data ini?');"><i class="fa fa-trash"></i></a>
                             </td>
                           </tr>
                           <?php } ?>

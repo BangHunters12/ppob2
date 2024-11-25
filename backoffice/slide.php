@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Information /</span> Slide Show
+                <span class="text-muted fw-light">Informasi /</span> Tayangan Slide
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Slide Show Saved!</span>
+                                <span><strong>Well Done!</strong> Tayangan Slide Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -143,7 +143,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Max Image ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -153,7 +153,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -166,30 +166,30 @@
                       ?>
                       <form role="form" action="<?php echo $urlweb; ?>/function/add-slide.php" method="post" enctype="multipart/form-data">
                         <div class="form-group mb-2">
-                          <label class="form-label">Upload Image :</label>
+                          <label class="form-label">Unggah Gambar :</label>
                           <input type="file" name="image" class="form-control">
-                          <span>JPG or PNG</span><br>
+                          <span>JPG Atau PNG</span><br>
                           <?php if(isset($_GET['catID'])) { ?>
                           <img src="<?php echo $urlwebs; ?>/upload/<?php echo $s2['image']; ?>" class="img-fluid">
                           <?php } ?>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Slide Text :</label>
+                          <label class="form-label">Teks Slide :</label>
                           <input class="form-control" type="text" name="deskripsi" value="<?php if(isset($_GET['catID'])) { echo $s2['deskripsi']; } ?>">
                           <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['catID'])) { echo $s2['id']; } ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Sort Order :</label>
+                          <label class="form-label">Urutan Sort :</label>
                           <input class="form-control" type="text" name="sort" value="<?php if(isset($_GET['catID'])) { echo $s2['sort']; } ?>">
                         </div>
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Active</option>
-                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Not Active</option>
+                            <option value="1"<?php if(isset($_GET['catID'])) { if($s2['status'] == 1) { echo 'selected = selected'; }} ?>> Aktif</option>
+                            <option value="0"<?php if(isset($_GET['catID'])) { if($s2['status'] == 0) { echo 'selected = selected'; }} ?>> Tidak Aktif</option>
                           </select>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/slide/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>
@@ -203,10 +203,10 @@
                         <thead>
                           <tr class="bg-info">
                             <th class="text-center">#</th>
-                            <th class="text-center">Image</th>
+                            <th class="text-center">Gambar</th>
                             <th class="text-center">Sort</th>
                             <th class="text-center">Status</th>
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -224,7 +224,7 @@
                             <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php if($s1['status'] == 0){ echo 'Unpublished'; } else { echo 'Published'; } ?></td>
                             <td class="text-center" style="vertical-align: middle; font-size: 14px;">
                               <a href="<?php echo $urlweb; ?>/slide/?catID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i></a>
-                              <a href="<?php echo $urlweb; ?>/function/del-slide.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                              <a href="<?php echo $urlweb; ?>/function/del-slide.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus data ini?');"><i class="fa fa-trash"></i></a>
                             </td>
                           </tr>
                           <?php } ?>

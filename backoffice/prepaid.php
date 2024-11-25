@@ -114,7 +114,7 @@
           <div class="content-wrapper">
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Product /</span> Product Prepaid</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Produk /</span> Produk Pra-bayar</h4>
               <?php
                 error_reporting(0);
                 if(isset($_GET['do'])){
@@ -125,7 +125,7 @@
                           <span class="alert-icon text-success me-2">
                             <i class="ti ti-check ti-xs"></i>
                           </span>
-                          <span><strong>Well Done!</strong> Product Prepaid Saved!</span>
+                          <span><strong>Well Done!</strong> Product Prepaid Tersimpan!</span>
                         </div>
                       ';
                     }
@@ -140,28 +140,28 @@
                 <div class="card-body">
                   <form role="form" class="form-group" action="<?php echo $urlweb; ?>/function/add-prepaid.php" method="post" enctype="multipart/form-data">
                     <div class="form-group mb-2">
-                      <label>Product Code :</label>
+                      <label>Kode Produk :</label>
                       <input class="form-control" name="productCode" type="text" value="<?php if(isset($_GET['catID'])) { echo $s2['code']; } ?>" readonly>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Product Name :</label>
+                      <label>Nama Produk :</label>
                       <input class="form-control" name="title" type="text" value="<?php if(isset($_GET['catID'])) { echo $s2['title']; } ?>" readonly>
                       <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['catID'])) { echo $s2['id']; } ?>">
                     </div>
                     <input class="form-control" type="hidden" name="product_type" value="<?php if(isset($_GET['catID'])) { echo $s2['product_type']; } ?>">
                     <div class="form-group mb-2">
-                      <label>Capital Price :</label>
+                      <label>Harga Modal :</label>
                       <input class="form-control" type="text" name="harga_modal" id="example2" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_modal']; } ?>"<?php if(isset($_GET['catID'])) { if($s2['jenis'] == 0){ echo 'readonly';}} ?>>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Selling Price :</label>
+                      <label>Harga Jual :</label>
                       <input class="form-control" type="text" name="harga_jual" id="example3" name="harga_jual" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_jual']; } ?>" required>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Reseller Price :</label>
+                      <label>Harga Reseller :</label>
                       <input class="form-control" type="text" name="harga_reseller" id="example4" name="harga_reseller" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_reseller']; } ?>" required>
                     </div>
-                    <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                     <a href="<?php echo $urlweb; ?>/product/" class="btn btn-light">Cancel</a>
                   </form>
                 </div>
@@ -175,12 +175,12 @@
                       <tr class="bg-info">
                         <th class="text-center" style="vertical-align: middle;">#</th>
                         <th class="text-center" style="vertical-align: middle;">Image</th>
-                        <th class="text-center" style="vertical-align: middle;">Code</th>
-                        <th class="text-center" style="vertical-align: middle;">Title</th>
-                        <th class="text-center" style="vertical-align: middle;">Category</th>
-                        <th class="text-center" style="vertical-align: middle;">Price</th>
+                        <th class="text-center" style="vertical-align: middle;">Kode</th>
+                        <th class="text-center" style="vertical-align: middle;">Judul</th>
+                        <th class="text-center" style="vertical-align: middle;">Kategori</th>
+                        <th class="text-center" style="vertical-align: middle;">Harga</th>
                         <th class="text-center" style="vertical-align: middle;">Provider</th>
-                        <th class="text-center" style="vertical-align: middle;">Action</th>
+                        <th class="text-center" style="vertical-align: middle;">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>

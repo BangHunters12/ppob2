@@ -95,7 +95,7 @@ $urlwebs = $s0['urlweb'];
               </div>
               <!-- /Logo -->
               <h4 class="mb-1 pt-2"></h4>
-              <p class="mb-4">Silakan masuk ke akun Anda dan mulai mengoprasi</p>
+              <p class="mb-4">Masukkan username dan password untuk membuka bagian admin</p>
 
               <?php
                 error_reporting(0);
@@ -191,7 +191,7 @@ $urlwebs = $s0['urlweb'];
                   </div>
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                  <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
                 </div>
               </form>
 

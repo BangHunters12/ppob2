@@ -111,7 +111,7 @@
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4">
-              <span class="text-muted fw-light">Transaction /</span> Top Up Request
+              <span class="text-muted fw-light">Transaksi /</span> Permintaan Top Up
 
             </h4>
 
@@ -124,10 +124,10 @@
                       <th class="text-center" style="vertical-align: middle;">#</th>
                       <th class="text-center" style="vertical-align: middle;">TrxID</th>
                       <th class="text-center" style="vertical-align: middle;">Username</th>
-                      <th class="text-center" style="vertical-align: middle;">Phone Number</th>
-                      <th class="text-center" style="vertical-align: middle;">Amount</th>
-                      <th class="text-center" style="vertical-align: middle;">Note</th>
-                      <th class="text-center" style="vertical-align: middle;">Date</th>
+                      <th class="text-center" style="vertical-align: middle;">Nomor Telepon</th>
+                      <th class="text-center" style="vertical-align: middle;">Jumlah</th>
+                      <th class="text-center" style="vertical-align: middle;">Catatan</th>
+                      <th class="text-center" style="vertical-align: middle;">Tanggal</th>
                       <th class="text-center" style="vertical-align: middle;">Status</th>
                     </tr>
                   </thead>

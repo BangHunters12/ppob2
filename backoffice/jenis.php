@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">System /</span> <span class="text-muted fw-light">Settings /</span> Product Tab Homepage
+                <span class="text-muted fw-light">Sistem /</span> <span class="text-muted fw-light">pengaturan /</span> Tab Produk di Halaman Utama
 
               </h4>
               <div class="row">
@@ -131,7 +131,7 @@
                             <th class="text-center">Icon</th>
                             <th class="text-center">Tab</th>
                             <th class="text-center">Status</th>
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
