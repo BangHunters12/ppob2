@@ -115,7 +115,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Product /</span> Product ApiGames
+                <span class="text-muted fw-light">Product /</span> Produk ApiGames
                 <span class="float-right" style="float: right;">
                   <a href="<?php echo $urlweb; ?>/product_apigames/?do=add" class="btn btn-primary" style="margin-top: -5px;"><i class="fa fa-plus"></i>&nbsp; Add Product</a>
                 </span>
@@ -130,7 +130,7 @@
                           <span class="alert-icon text-success me-2">
                             <i class="ti ti-check ti-xs"></i>
                           </span>
-                          <span><strong>Well Done!</strong> Product Apigames Saved!</span>
+                          <span><strong>Well Done!</strong> Produk Apigames Tersimpan!</span>
                         </div>
                       ';
                     }
@@ -145,45 +145,45 @@
                 <div class="card-body">
                   <form role="form" class="form-group" action="<?php echo $urlweb; ?>/function/add-produkapigames.php" method="post" enctype="multipart/form-data">
                     <div class="form-group mb-2">
-                      <label>Product Code :</label>
+                      <label>Kode Produk :</label>
                       <input class="form-control" name="productCode" type="text" value="<?php if(isset($_GET['catID'])) { echo $s2['code']; } ?>">
                     </div>
                     <div class="form-group mb-2">
-                      <label>Product Name :</label>
+                      <label>Nama Produk :</label>
                       <input class="form-control" name="title" type="text" value="<?php if(isset($_GET['catID'])) { echo $s2['title']; } ?>">
                       <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['catID'])) { echo $s2['id']; } ?>">
                     </div>
                     <?php if(!isset($_GET['catID'])) { ?>
                     <div class="form-group mb-2">
-                      <label>Product Type</label>
+                      <label>Tipe Produk</label>
                       <select name="product_type" id="jenis" class="form-control" required>
-                        <option value=""> Product Type </option>
+                        <option value=""> Tipe Produk </option>
                         <option value="1"> Game</option>
                         <option value="2"> Akun Premium</option>
                       </select>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Product Category</label>
+                      <label>Kategori Produk</label>
                       <select name="kategori" id="kategori" class="form-control" required>
-                        <option value=""> Product Category </option>
+                        <option value=""> kategori Produk </option>
                       </select>
                     </div>
                     <?php } else { ?>
                     <input class="form-control" type="hidden" name="product_type" value="<?php if(isset($_GET['catID'])) { echo $s2['product_type']; } ?>">
                     <?php } ?>
                     <div class="form-group mb-2">
-                      <label>Capital Price :</label>
+                      <label>Harga Modal :</label>
                       <input class="form-control" type="text" name="harga_modal" id="example2" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_modal']; } ?>"<?php if(isset($_GET['catID'])) { if($s2['jenis'] == 0){ echo 'readonly';}} ?>>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Selling Price :</label>
+                      <label>Harga Jual :</label>
                       <input class="form-control" type="text" name="harga_jual" id="example3" name="harga_jual" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_jual']; } ?>" required>
                     </div>
                     <div class="form-group mb-2">
-                      <label>Reseller Price :</label>
+                      <label>Harga Reseller :</label>
                       <input class="form-control" type="text" name="harga_reseller" id="example4" name="harga_reseller" value="<?php if(isset($_GET['catID'])) { echo $s2['harga_reseller']; } ?>" required>
                     </div>
-                    <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                     <a href="<?php echo $urlweb; ?>/product_apigames/" class="btn btn-light">Cancel</a>
                   </form>
                 </div>
@@ -210,11 +210,11 @@
                             <tr class="bg-info">
                               <th class="text-center" style="vertical-align: middle;">#</th>
                               <th class="text-center" style="vertical-align: middle;">Image</th>
-                              <th class="text-center" style="vertical-align: middle;">Code</th>
-                              <th class="text-center" style="vertical-align: middle;">Title</th>
-                              <th class="text-center" style="vertical-align: middle;">Category</th>
-                              <th class="text-center" style="vertical-align: middle;">Price</th>
-                              <th class="text-center" style="vertical-align: middle;">Action</th>
+                              <th class="text-center" style="vertical-align: middle;">Kode</th>
+                              <th class="text-center" style="vertical-align: middle;">Judul</th>
+                              <th class="text-center" style="vertical-align: middle;">Kategori</th>
+                              <th class="text-center" style="vertical-align: middle;">Harga</th>
+                              <th class="text-center" style="vertical-align: middle;">Aksi</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -236,13 +236,13 @@
                               <td class="text-left" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php echo $s1['title']; ?></td>
                               <td class="text-left" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php echo $s1['kategori']; ?></td>
                               <td class="text-right" style="vertical-align: middle; white-space: normal; font-size: 14px;">
-                                Capital price  : Rp. <?php echo number_format($s1['harga_modal']); ?><br>
-                                Selling price  : Rp. <?php echo number_format($s1['harga_jual']); ?><br>
-                                Reseller Price : Rp. <?php echo number_format($s1['harga_reseller']); ?>
+                                Harga Modal  : Rp. <?php echo number_format($s1['harga_modal']); ?><br>
+                                Harga Jual  : Rp. <?php echo number_format($s1['harga_jual']); ?><br>
+                                Harga Reseller : Rp. <?php echo number_format($s1['harga_reseller']); ?>
                               </td>
                               <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px; width: 10%;">
                                 <a href="<?php echo $urlweb; ?>/product_apigames/?do=add&catID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i></a>
-                                <a href="<?php echo $urlweb; ?>/function/del-produkgames.php?id=<?php echo $s1['id']; ?>&abc=<?php echo $s1['product_type']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                                <a href="<?php echo $urlweb; ?>/function/del-produkgames.php?id=<?php echo $s1['id']; ?>&abc=<?php echo $s1['product_type']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this ?');"><i class="fa fa-trash"></i></a>
                               </td>
                             </tr>
                             <?php } ?>
@@ -289,7 +289,7 @@
                               </td>
                               <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px; width: 10%;">
                                 <a href="<?php echo $urlweb; ?>/product_apigames/?do=add&catID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i></a>
-                                <a href="<?php echo $urlweb; ?>/function/del-produkgames.php?id=<?php echo $s1['id']; ?>&abc=<?php echo $s1['product_type']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                                <a href="<?php echo $urlweb; ?>/function/del-produkgames.php?id=<?php echo $s1['id']; ?>&abc=<?php echo $s1['product_type']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus data ini?');"><i class="fa fa-trash"></i></a>
                               </td>
                             </tr>
                             <?php } ?>

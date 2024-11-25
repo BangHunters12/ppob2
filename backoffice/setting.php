@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Setting Saved!</span>
+                                <span><strong>Well Done!</strong> Setting Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -143,7 +143,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Max Image ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -153,7 +153,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -163,12 +163,12 @@
                       ?>
                       <form role="form" action="<?php echo $urlweb; ?>/function/setting.php" method="post" enctype="multipart/form-data">
                         <div class="form-group mb-2">
-                          <label class="form-label">Upload Logo</label>
+                          <label class="form-label">Ungga Logo</label>
                           <input type="file" name="image" class="form-control">
                           <img src="<?php echo $urlwebs; ?>/upload/<?php echo $s2['image']; ?>" class="img-fluid">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Upload Favicon</label>
+                          <label class="form-label">Unggah  Favicon</label>
                           <input type="file" name="favicon" class="form-control">
                           <img src="<?php echo $urlwebs; ?>/upload/favicon.png" class="img-fluid">
                         </div>
@@ -177,14 +177,14 @@
                           <input class="form-control" type="text" name="instansi" value="<?php echo $s2['instansi']; ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Meta Keyword :</label>
+                          <label class="form-label">Meta Kata Kunci :</label>
                           <input class="form-control" type="text" name="keyword" value="<?php echo $s2['keyword']; ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Meta Description :</label>
+                          <label class="form-label">Description :</label>
                           <textarea class="form-control summernoteEditor" type="text" name="deskripsi"><?php echo $s2['deskripsi']; ?></textarea>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/setting/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>

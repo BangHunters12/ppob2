@@ -216,7 +216,7 @@
                               <th class="text-center" style="vertical-align: middle;">Rekening Bank</th>
                               <th class="text-center" style="vertical-align: middle;">Nomor Rekening</th>
                               <th class="text-center" style="vertical-align: middle;">Nama Akun</th>
-                              <th class="text-center" style="vertical-align: middle;">Action</th>
+                              <th class="text-center" style="vertical-align: middle;">Aksi</th>
                             </tr>
                           </thead>
                           <tbody>

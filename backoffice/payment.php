@@ -127,11 +127,11 @@
                       <tr class="bg-info">
                         <th class="text-center" style="vertical-align: middle;">#</th>
                         <th class="text-center" style="vertical-align: middle;">TrxID</th>
-                        <th class="text-center" style="vertical-align: middle;">Full Name</th>
+                        <th class="text-center" style="vertical-align: middle;">Nama Lengkap</th>
                         <th class="text-center" style="vertical-align: middle;">Email Address</th>
-                        <th class="text-center" style="vertical-align: middle;">Phone Number</th>
-                        <th class="text-center" style="vertical-align: middle;">Amount</th>
-                        <th class="text-center" style="vertical-align: middle;">Created Date</th>
+                        <th class="text-center" style="vertical-align: middle;">Nomor Telepon</th>
+                        <th class="text-center" style="vertical-align: middle;">Jumlah Uang</th>
+                        <th class="text-center" style="vertical-align: middle;">tanggal dibuat</th>
                         <th class="text-center" style="vertical-align: middle;">Status</th>
                       </tr>
                     </thead>
@@ -162,7 +162,7 @@
                             else if($s1['status'] == 'PAID'){
                               echo '
                                 <span class="badge-dot">
-                                  <i class="bg-success"></i> PAID
+                                  <i class="bg-success"></i> SUKSES
                                 </span>
                               ';
                             }

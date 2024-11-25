@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Profiles Saved!</span>
+                                <span><strong>Well Done!</strong> Profil Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -157,14 +157,14 @@
                           <input class="form-control" type="text" name="email" value="<?php echo $s2['email']; ?>" placeholder="Alamat Email">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Full Name :</label>
+                          <label class="form-label">Nama Lengkap :</label>
                           <input class="form-control" type="text" name="full_name" value="<?php echo $s2['full_name']; ?>" placeholder="Nama Lengkap">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Phone / Mobile Number :</label>
+                          <label class="form-label">Nomor Telepon :</label>
                           <input class="form-control" type="text" name="no_hp" value="<?php echo $s2['no_hp']; ?>" placeholder="No. Handphone">
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Simpan</button></button>
                       </form>
                     </div>
                   </div>

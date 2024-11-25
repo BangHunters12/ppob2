@@ -117,8 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">System /</span> Pop Up Product
-
+                <span class="text-muted fw-light">System /</span> Pop-Up Produk
               </h4>
               <div class="row">
                 <div class="col-sm-6">
@@ -133,7 +132,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Pop Up Product Saved!</span>
+                                <span><strong>Well Done!</strong> Pop Up Produk Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -143,7 +142,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Max Image Ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -153,7 +152,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -175,13 +174,13 @@
                           <?php } ?>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Description :</label>
+                          <label class="form-label">Deskripsi :</label>
                           <textarea class="form-control summernoteEditor" type="text" name="deskripsi"><?php if(isset($_GET['catID'])) { echo $s2['deskripsi']; } ?></textarea>
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Select Product :</label>
+                          <label class="form-label">Pilih Produk :</label>
                           <select name="catID" class="form-control">
-                            <option value="0"> All Product </option>
+                            <option value="0"> Semua Produk </option>
                             <?php
                               $sql_kategori = mysqli_query($conn,"SELECT * FROM `tb_kategori` ORDER BY id ASC") or die(mysqli_error());
                               while($sk = mysqli_fetch_array($sql_kategori)){
@@ -193,11 +192,11 @@
                         <div class="form-group mb-2">
                           <label class="form-label">Status :</label>
                           <select name="status" class="form-control">
-                            <option value="true"<?php if(isset($_GET['catID'])) { if($s2['status'] == 'true') { echo 'selected = selected'; }} ?>> Active</option>
-                            <option value="false"<?php if(isset($_GET['catID'])) { if($s2['status'] == 'false') { echo 'selected = selected'; }} ?>> Not Active</option>
+                            <option value="true"<?php if(isset($_GET['catID'])) { if($s2['status'] == 'true') { echo 'selected = selected'; }} ?>> Aktif</option>
+                            <option value="false"<?php if(isset($_GET['catID'])) { if($s2['status'] == 'false') { echo 'selected = selected'; }} ?>> Tidak Aktif</option>
                           </select>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/popup_product/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>
@@ -212,9 +211,9 @@
                           <tr class="bg-info">
                             <th class="text-center">#</th>
                             <th class="text-center">Icon</th>
-                            <th class="text-center">Category</th>
+                            <th class="text-center">Kategori</th>
                             <th class="text-center">Status</th>
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -232,7 +231,7 @@
                             <td class="text-center" style="vertical-align: middle; font-size: 14px;">
                               <a href="<?php echo $urlweb; ?>/function/kategori-status.php?postID=<?php echo $s1['id']; ?>&status=<?php echo $s1['status']; ?>" class="btn <?php if($s1['status'] == 0){ echo 'btn-success'; } else { echo 'btn-warning'; } ?> btn-sm"><i class="fa fa-heart"></i></a>
                               <a href="<?php echo $urlweb; ?>/popup_product/?catID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i></a>
-                              <a href="<?php echo $urlweb; ?>/function/del-popproduct.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');"><i class="fa fa-trash"></i></a>
+                              <a href="<?php echo $urlweb; ?>/function/del-popproduct.php?id=<?php echo $s1['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus data ini?');"><i class="fa fa-trash"></i></a>
                             </td>
                           </tr>
                           <?php } ?>

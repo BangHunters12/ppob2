@@ -117,7 +117,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Information /</span> Content Page
+                <span class="text-muted fw-light">Information /</span> Halaman Konten
 
               </h4>
               <div class="row">
@@ -133,7 +133,7 @@
                                 <span class="alert-icon text-success me-2">
                                   <i class="ti ti-check ti-xs"></i>
                                 </span>
-                                <span><strong>Well Done!</strong> Content Page Saved!</span>
+                                <span><strong>Well Done!</strong> Halaman Konten Tersimpan!</span>
                               </div>
                             ';
                           }
@@ -143,7 +143,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Max Image Size 2MB!</span>
+                                <span><strong>Warning!</strong> Max Image Ukuran/Size 2MB!</span>
                               </div>
                             ';
                           }
@@ -153,7 +153,7 @@
                                 <span class="alert-icon text-warning me-2">
                                   <i class="ti ti-bell ti-xs"></i>
                                 </span>
-                                <span><strong>Warning!</strong> Only JPG atau PNG!</span>
+                                <span><strong>Warning!</strong> Hanya JPG atau PNG!</span>
                               </div>
                             ';
                           }
@@ -166,15 +166,15 @@
                       ?>
                       <form role="form" action="<?php echo $urlweb; ?>/function/edit-page.php" method="post" enctype="multipart/form-data">
                         <div class="form-group mb-2">
-                          <label class="form-label">Page Name :</label>
+                          <label class="form-label">Nama Halaman :</label>
                           <input class="form-control" type="text" name="title" value="<?php if(isset($_GET['postID'])) { echo $s2['nama_page']; } ?>" required>
                           <input class="form-control" type="hidden" name="postID" value="<?php if(isset($_GET['postID'])) { echo $s2['id']; } ?>">
                         </div>
                         <div class="form-group mb-2">
-                          <label class="form-label">Description :</label>
+                          <label class="form-label">Deskripsi :</label>
                           <textarea class="form-control summernoteEditor" type="text" name="content"><?php if(isset($_GET['catID'])) { echo $s2['content']; } ?></textarea>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Publish</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Publikasi</button>
                         <a href="<?php echo $urlweb; ?>/page/" class="btn btn-light">Cancel</a>
                       </form>
                     </div>
@@ -188,8 +188,8 @@
                         <thead>
                           <tr class="bg-info">
                             <th class="text-center">#</th>
-                            <th class="text-center">Page Name</th>
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Nama Halaman</th>
+                            <th class="text-center">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>

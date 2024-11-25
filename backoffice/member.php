@@ -130,10 +130,10 @@
                           <tr class="bg-info">
                             <th class="text-center" style="vertical-align: middle;">#</th>
                             <th class="text-center" style="vertical-align: middle;">Username</th>
-                            <th class="text-center" style="vertical-align: middle;">Full Name</th>
+                            <th class="text-center" style="vertical-align: middle;">Nama Lengkap</th>
                             <th class="text-center" style="vertical-align: middle;">Email Address</th>
-                            <th class="text-center" style="vertical-align: middle;">Phone Number</th>
-                            <th class="text-center" style="vertical-align: middle;">Action</th>
+                            <th class="text-center" style="vertical-align: middle;">Nomor Telepon</th>
+                            <th class="text-center" style="vertical-align: middle;">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -150,11 +150,11 @@
                             <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php echo $s1['email']; ?></td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px;"><?php echo $s1['no_hp']; ?></td>
                             <td class="text-center" style="vertical-align: middle; white-space: normal; font-size: 14px;">
-                              <a href="<?php echo $urlweb; ?>/function/reseller.php?postID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm" onclick="return confirm('Are you sure want to Upgrade this user be a Reseller?');">
+                              <a href="<?php echo $urlweb; ?>/function/reseller.php?postID=<?php echo $s1['id']; ?>" class="btn btn-primary btn-sm" onclick="return confirm('Apakah Anda yakin ingin mengupgrade pengguna ini menjadi Reseller?');">
                                 Upgrade
                               </a>
                               <a href="<?php echo $urlweb; ?>/function/user-status.php?postID=<?php echo $s1['id']; ?>&status=<?php echo $s1['status']; ?>&tipe=1" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a>
-                              <a href="<?php echo $urlweb; ?>/function/del-user.php?id=<?php echo $s1['id']; ?>&tipe=1" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure want remove this data?');">
+                              <a href="<?php echo $urlweb; ?>/function/del-user.php?id=<?php echo $s1['id']; ?>&tipe=1" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
                                 <i class="fa fa-trash"></i>
                               </a>
                             </td>
