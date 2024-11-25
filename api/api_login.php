@@ -18,12 +18,21 @@ function sendResponse($status, $message, $data = null) {
 }
 
 // Mendapatkan input dari JSON request
+<<<<<<< HEAD
 // $_POST = file_get_contents('php://input');
 // var_dump($_POST);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = isset($_POST['username']) ? trim($_POST['username']) : '';
     $password = isset($_POST['password']) ? trim($_POST['password']) : '';
+=======
+$input = file_get_contents('php://input');
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $username = isset($input['username']) ? trim($input['username']) : '';
+    $password = isset($input['password']) ? trim($input['password']) : '';
+>>>>>>> 21103030a1eaa5f2a19f0dc8cdd5ca71065f4175
 
     if ($username === '' || $password === '') {
         sendResponse('error', 'Username dan password tidak boleh kosong ');

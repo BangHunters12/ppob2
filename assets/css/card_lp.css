@@ -1,0 +1,64 @@
+/* Modal Card Design */
+.modal-content {
+    background: rgba(255, 255, 255, 0.1); /* Transparan dengan warna lembut */
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang modal */
+    color: #fff; /* Teks putih */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border transparan */
+    border-radius: 10px; /* Border bulat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Shadow halus */
+  }
+  
+  .modal-header h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .modal-body input {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-body input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .modal-body button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .modal-body button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  /* Warna teks default */
+  input {
+    color: #000; /* Warna teks awal (hitam) */
+    background-color: white; /* Transparansi */
+    border: 1px solid #ccc; /* Garis pembatas */
+  }
+  
+  /* Warna teks berubah menjadi putih setelah input */
+  input:not(:placeholder-shown) {
+    color: #fff; /* Ubah menjadi putih */
+    background-color: white; /* Opsional, untuk memastikan kontras */
+  }
+  
+  /* Untuk password field (tidak ada placeholder) */
+  input:valid {
+    color: #fff; /* Ubah menjadi putih */
+    background-color: #333; /* Opsional */
+  }
+  
+  /* Tambahan opsional untuk meningkatkan kontras */
+  input:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+    outline: none;
+  }
+  

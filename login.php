@@ -59,7 +59,12 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
   <!-- Custom Style-->
   <link href="<?php echo $urlweb; ?>/assets/css/app-style.css" rel="stylesheet"/>
   <link href="<?php echo $urlweb; ?>/assets/css/style-main<?php echo $s0['warna']; ?>.css" rel="stylesheet"/>
- 
+<!-- forgot password css-->
+<link href="<?php echo $urlweb; ?>/assets/css/card_lp.css" rel="stylesheet"/>
+<!-- <script src="assets/js/login.js"></script> -->
+
+ <style>
+</style>
 </head>
 
 <body>
@@ -165,7 +170,72 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
                       <input type="password" name="pass" class="form-control" required>
                     </div>
                     <button type="submit" name="submit" value="submit" class="btn btn-primary">Masuk Akun</button>
+              
+                    <div class="mt-3">
+                     <a href="javascript:void(0);" data-toggle="modal" data-target="#forgotPasswordModal">Lupa Password?</a>
+                    </div>
+
+
                   </form>
+
+                  
+<!-- card Lupa Password -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forgotPasswordLabel">Lupa Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="forgotPasswordForm">
+          <div class="form-group">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" name="fullname" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="no_hp">Nomor HP</label>
+            <input type="text" id="no_hp" name="no_hp" class="form-control" required>
+          </div>
+          <button type="button" id="validateUser" class="btn btn-primary">Validasi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card Password Baru -->
+<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="resetPasswordLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resetPasswordLabel">Reset Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="resetPasswordForm">
+          <div class="form-group">
+            <label for="new_password">Password Baru</label>
+            <input type="password" id="new_password" name="new_password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Konfirmasi Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
+          </div>
+          <button type="button" id="resetPassword" class="btn btn-primary">Reset Password</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
                 </div>
               </div>
             </div>
@@ -181,5 +251,95 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
 	
 	  <!--Start footer-->
     <?php include('footer.php'); ?>
+
+
+                  <!-- java script forgot password -->
+    <script>
+      
+   $(document).ready(function () {
+
+  // Validasi pengguna
+  $('#validateUser').on('click', function () {
+    const fullname = $('#fullname').val();
+    const email = $('#email').val();
+    const no_hp = $('#no_hp').val();
+
+    if (fullname && email && no_hp) {
+      console.log({ fullname, email, no_hp }); 
+      $.ajax({
+        url: 'http://localhost/ppob2/forgot_password.php',
+        type: 'POST',
+        data: { action: 'validate_user', full_name: fullname, email, no_hp }, 
+        success: function (response) {
+          console.log(response); 
+          try {
+            const res = JSON.parse(response);
+            if (res.status === 'success') {
+              $('#forgotPasswordModal').modal('hide');
+              $('#resetPasswordModal').modal('show');
+            } else {
+              alert(res.message);
+            }
+          } catch (e) {
+            console.error('Parsing error:', e);
+            alert('Terjadi kesalahan saat membaca respons server.');
+          }
+        },
+        error: function (xhr) {
+          console.error(xhr.responseText);
+          alert('Terjadi kesalahan, coba lagi.');
+        },
+      });
+    } else {
+      alert('Semua bidang wajib diisi.');
+    }
+  });
+
+  // Reset password
+  $('#resetPassword').on('click', function () {
+    const newPassword = $('#new_password').val();
+    const confirmPassword = $('#confirm_password').val();
+
+    if (newPassword && confirmPassword) {
+      if (newPassword === confirmPassword) {
+        if (newPassword.length < 6) {
+          alert('Password harus memiliki minimal 6 karakter.');
+          return;
+        }
+        console.log({ newPassword, confirmPassword }); 
+        $.ajax({
+          url: 'http://localhost/ppob2/forgot_password.php',
+          type: 'POST',
+          data: { action: 'reset_password', new_password: newPassword },
+          success: function (response) {
+            console.log(response); 
+            try {
+              const res = JSON.parse(response);
+              if (res.status === 'success') {
+                alert('Password berhasil direset. Silakan login.');
+                $('#resetPasswordModal').modal('hide');
+              } else {
+                alert(res.message);
+              }
+            } catch (e) {
+              console.error('Parsing error:', e);
+              alert('Terjadi kesalahan saat membaca respons server.');
+            }
+          },
+          error: function (xhr) {
+            console.error(xhr.responseText); 
+            alert('Terjadi kesalahan, coba lagi.');
+          },
+        });
+      } else {
+        alert('Password dan Konfirmasi Password tidak sama.');
+      }
+    } else {
+      alert('Semua bidang wajib diisi.');
+    }
+  });
+});
+
+</script>
 </body>
 </html>

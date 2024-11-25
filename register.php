@@ -59,7 +59,9 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
   <!-- Custom Style-->
   <link href="<?php echo $urlweb; ?>/assets/css/app-style.css" rel="stylesheet"/>
   <link href="<?php echo $urlweb; ?>/assets/css/style-main<?php echo $s0['warna']; ?>.css" rel="stylesheet"/>
- 
+
+      <script src="https://www.google.com/recaptcha/api.js?hl=id" async defer></script>
+</script>
 </head>
 
 <body>
@@ -150,6 +152,9 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
                         <p class="text-white">No. Whatsapp</p>
                         <input type="text" name="no_hp" class="form-control" placeholder="No. Whatsapp aktif!" value="" required>
                       </div>
+                      <div class="form-group mb-2">
+                      <div class="g-recaptcha" data-sitekey="6LdIjYcqAAAAACGkTw8noU4QQHchwVANnQwF7cxj" id="recaptcha"></div>
+                      <br/>
                       <button type="submit" name="submit" value="submit" class="btn btn-primary">Buat Akun</button>
                       
                     </form>
@@ -173,5 +178,16 @@ $stat = mysqli_query($conn,"INSERT INTO `tb_stat` (`ip`, `date`, `hits`, `page`,
 	
 	  <!--Start footer-->
     <?php include('footer.php'); ?>
+    <script>
+   document.querySelector('form').addEventListener('submit', function(event) {
+       var recaptchaResponse = grecaptcha.getResponse();
+       if (recaptchaResponse.length == 0) {
+           // Jika CAPTCHA tidak diselesaikan
+           event.preventDefault(); // Mencegah form dikirim
+           alert('Harap validasi CAPTCHA terlebih dahulu!');
+       }
+   });
+</script>
+
 </body>
 </html>
