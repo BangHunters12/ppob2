@@ -17,16 +17,15 @@ function sendResponse($status, $message, $data = null) {
     ]);
 }
 
-// Mendapatkan input dari JSON request
-// $_POST = file_get_contents('php://input');
-// var_dump($_POST);
+// Get raw JSON input
+$data = json_decode(file_get_contents('php://input'), true);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = isset($_POST['username']) ? trim($_POST['username']) : '';
-    $password = isset($_POST['password']) ? trim($_POST['password']) : '';
+    $username = isset($data['username']) ? trim($data['username']) : '';
+    $password = isset($data['password']) ? trim($data['password']) : '';
 
     if ($username === '' || $password === '') {
-        sendResponse('error', 'Username dan password tidak boleh kosong ');
+        sendResponse('error', 'Username dan password tidak boleh kosong');
         exit;
     }
 
@@ -40,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        // Kirim data user 
+        // Kirim data user
         sendResponse('success', 'Login berhasil', [
             'user_id' => $user['id'],
             'username' => $user['user'],

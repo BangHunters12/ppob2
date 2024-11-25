@@ -7,8 +7,7 @@
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="<?php echo $urlweb; ?>/assets/"
-  data-template="vertical-menu-template"
->
+  data-template="vertical-menu-template">
   <head>
     <meta charset="utf-8" />
     <meta
