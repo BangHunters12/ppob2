@@ -92,18 +92,18 @@
                 <div data-i18n="Produk Prabayar">Produk Prabayar</div>
               </a>
             </li>
-            <li class="menu-item">
+            <!-- <li class="menu-item">
               <a href="<?php echo $urlweb; ?>/social_media/" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-brand-instagram"></i>
                 <div data-i18n="Produk Sosial">Produk Sosial</div>
               </a>
-            </li>
-            <li class="menu-item">
+            </li> -->
+            <!-- <li class="menu-item">
               <a href="<?php echo $urlweb; ?>/product_apigames/" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-device-gamepad"></i>
                 <div data-i18n="Produk Apigames">Produk Apigames</div>
               </a>
-            </li>
+            </li> -->
             <li class="menu-item">
               <a href="<?php echo $urlweb; ?>/product_manual/" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-ticket"></i>
@@ -208,7 +208,7 @@
                     <div data-i18n="Tambah Voucher">Tambah Voucher</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <!-- <li class="menu-item">
                   <a href="<?php echo $urlweb; ?>/banner/" class="menu-link">
                     <div data-i18n="Pop Up Halaman Utama">Pop Up Halaman Utama</div>
                   </a>
@@ -217,7 +217,7 @@
                   <a href="<?php echo $urlweb; ?>/popup_product/" class="menu-link">
                     <div data-i18n="Pop Up Produk">Pop Up Produk</div>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
