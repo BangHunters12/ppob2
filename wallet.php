@@ -196,7 +196,7 @@
                                            
                                     curl_setopt_array($curls, array(
                                       CURLOPT_FRESH_CONNECT     => true,
-                                      CURLOPT_URL               => "https://tripay.co.id/api/merchant/payment-channel",
+                                      CURLOPT_URL               => "https://tripay.co.id/api-sandbox/merchant/payment-channel",
                                       CURLOPT_RETURNTRANSFER    => true,
                                       CURLOPT_HEADER            => false,
                                       CURLOPT_HTTPHEADER        => array(
