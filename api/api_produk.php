@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-include('config/koneksi.php'); // Sesuaikan dengan file koneksi Anda
+include('../config/koneksi.php'); // Sesuaikan dengan file koneksi Anda
 
 $conn = new mysqli($host, $user, $password, $database);
 

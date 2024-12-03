@@ -256,7 +256,7 @@ $tripayApi = $s5['api_key'];
                                
                         curl_setopt_array($curls, array(
                           CURLOPT_FRESH_CONNECT     => true,
-                          CURLOPT_URL               => "https://tripay.co.id/api/merchant/payment-channel",
+                          CURLOPT_URL               => "https://tripay.co.id/api-sandbox/merchant/payment-channel",
                           CURLOPT_RETURNTRANSFER    => true,
                           CURLOPT_HEADER            => false,
                           CURLOPT_HTTPHEADER        => array(
@@ -270,6 +270,7 @@ $tripayApi = $s5['api_key'];
                         curl_close($curls);
                         //echo !empty($err) ? $err : $responses;
                         $hasils = json_decode($responses, true);
+                
                     ?>
                     <div class="card box_game mb-1">
                       <div class="card-header pt-1 pb-0 pl-1 pr-1" id="headingTwo">
