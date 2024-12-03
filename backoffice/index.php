@@ -231,3 +231,6 @@ $urlwebs = $s0['urlweb'];
     <script src="<?php echo $urlweb; ?>/assets/js/pages-auth.js"></script>
   </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="backoffice/assets/js/menu.js"></script>
